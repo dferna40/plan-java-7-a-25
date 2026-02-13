@@ -32,3 +32,15 @@ Implementados en la clase `StreamsKata` con tests en `StreamsKataTest`:
 En la carpeta `katas` (padre):
 ```bash
 mvn -pl plan_s01_d01 test
+
+## Tareas realizadas (Día 1)
+- ✅ Configuración del módulo Maven `plan_s01_d01` dentro del multi-módulo `katas`.
+- ✅ Creación de la estructura estándar:
+  - `src/main/java` (implementación)
+  - `src/test/java` (tests)
+- ✅ Implementación de `StreamsKata` con Streams:
+  - `onlyEvens` → `filter` + `collect`
+  - `upperTrim` → `map` + `collect`
+  - `normalizeAndSort` → `filter` + `map` + `sorted` + `collect`
+- ✅ Tests con JUnit 5 (`SmokeTest` y `StreamsKataTest`).
+- ✅ Verificación: `mvn test` en verde (BUILD SUCCESS).
