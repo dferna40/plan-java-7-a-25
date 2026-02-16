@@ -16,7 +16,12 @@ Implementados en `StreamsKata` con tests en `StreamsKataTest`:
    - Quita duplicados manteniendo el orden de primera aparición.
 
 3. **minMaxStats(List<Integer>)**
-   - Devuelve estadísticas (min/max) con `IntSummaryStatistics` dentro de `Optional`.
+   - Devuelve estadísticas (min/max, y más) con `IntSummaryStatistics` dentro de `Optional`.
+   - Si la lista es `null` o está vacía, devuelve `Optional.empty()`.
+
+## Notas Java 8 (importante)
+- `List.of(...)` **NO existe** en Java 8 → usa `Arrays.asList(...)`.
+- `Optional.isEmpty()` **NO existe** en Java 8 → usa `isPresent()` / `!isPresent()`.
 
 ## Estructura
 - `src/main/java/com/david/plan/s01/d02/StreamsKata.java`
